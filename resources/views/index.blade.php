@@ -19,7 +19,7 @@
                 <div class="col-lg-6 order-lg-1 wow fadeInUp pt-5" data-wow-delay="0.3s">
                     <!-- <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">About Us</p> -->
                     <h1 class="display-6 mb-4 text-primary">{{ __('index.int') }}</h1>
-                    <h5 style="font-weight: 600;" class="mb-4 text-muted">{{ __('index.int') }}</h5>
+                    <h5 style="font-weight: 600;" class="mb-4 text-muted">{{ __('index.bigtitle') }}</h5>
                 </div>
             </div>
         </div>
