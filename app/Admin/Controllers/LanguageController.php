@@ -31,7 +31,7 @@ class LanguageController extends Controller
                 $tabrow_[] = $page->group;
                 $tabrow .= '<tr data-key="1" class="row-1">
                                 <td class="column-group">
-                                    <a href="'.route('admin.languages.pagesGR', $page->group).'">'.ucfirst(strtolower($page->group)).'</a>
+                                    <a href="'.route('admin.languages.pagesGR', $page->group).'">'.$page->group.'</a>
                                 </td>
                             </tr>';
             }
@@ -84,13 +84,13 @@ class LanguageController extends Controller
                                 <a href="'.route('admin.language.edit', $page->id).'">'.$page->key.'</a>
                             </td>
                             <td class="column-group">
-                                '.$enText.'
+                                '.Str::words($enText, 10).'
                             </td>
                             <td class="column-group">
-                                '.$ruText.'
+                                '.Str::words($ruText, 10).'
                             </td>
                             <td class="column-group">
-                                '.$deText.'
+                                '.Str::words($deText, 10).'
                             </td>
                         </tr>';
         }
