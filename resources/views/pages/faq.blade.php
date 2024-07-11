@@ -16,31 +16,31 @@
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Question 1 ?
+                            {{ __('faq.qstn') }} 1 ?
                         </button>
                       </h2>
                       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        <div class="accordion-body">{{ __('faq.accrdn') }}</div>
                       </div>
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Question 2 ?
+                            {{ __('faq.qstn') }} 2 ?
                         </button>
                       </h2>
                       <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                        <div class="accordion-body">{{ __('faq.accrdn') }}</div>
                       </div>
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="flush-headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Question 3 ?
+                            {{ __('faq.qstn') }} 3 ?
                         </button>
                       </h2>
                       <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                        <div class="accordion-body">{{ __('faq.accrdn') }}</div>
                       </div>
                     </div>
                   </div>
@@ -54,15 +54,15 @@
                         <img src="/assets/img/contact/faq-sidebar.bb0c8f35.svg" class="img-fluid" alt="Illustration">
                         <!-- <p class="mt-3 text-primary text-center" style="">You can contact us in a way that is convenient for you</p> -->
                         <div class="suggest-sidebar">
-                            <h6 class="text-primary">Didn't find the answer to the question?  <br>  Ask us directly </h6>
+                            <h6 class="text-primary">{{ __('faq.answr') }}</h6>
                         </div>
                     </div>
-                    
+
                     <form class="contact-form mt-4"  action="{{ route('faq.submit') }}" method="POST">
-                        @csrf  
+                        @csrf
                         <div class="form-group">
                             <i class="bi bi-person contact-form-icon"></i>
-                            <input type="text" class="form-control mb-3 ps-5" id="name" name="name" placeholder="Last and First name" required>
+                            <input type="text" class="form-control mb-3 ps-5" id="name" name="name" placeholder="{{ __('faq.lafn') }}" required>
                         </div>
                         <div class="form-group">
                             <i class="bi bi-envelope contact-form-icon"></i>
@@ -70,10 +70,10 @@
                         </div>
                         <div class="form-group">
                             <i class="bi bi-phone contact-form-icon"></i>
-                            <input type="tel" class="form-control mb-3 ps-5" id="phone" name="phone" placeholder="Phone number" required>
+                            <input type="tel" class="form-control mb-3 ps-5" id="phone" name="phone" placeholder="{{ __('faq.phnnnmbr') }}" required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control mb-3" id="message" placeholder="Question" name="message" rows="5" required></textarea>
+                            <textarea class="form-control mb-3" id="message" placeholder="{{ __('faq.qstn') }}" name="message" rows="5" required></textarea>
                         </div>
                         @if($errors->any())
                             <div>
@@ -84,11 +84,11 @@
                                 </ul>
                             </div>
                         @endif
-                        <button type="submit" class="btn btn-primary btn-block w-100 p-2">Send →</button>
+                        <button type="submit" class="btn btn-primary btn-block w-100 p-2">{{ __('faq.sndddd') }} →</button>
                     </form>
                 </div>
             </div>
-            
+
         </div>
     </div>
 @endsection

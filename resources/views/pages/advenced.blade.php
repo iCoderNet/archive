@@ -101,69 +101,69 @@
 @section('content')
 <div class="container">
     <div class="row mt-5">
-        <h2 class="text-primary mb-4">Advanced search</h2>
+        <h2 class="text-primary mb-4">{{ __('advanced.asearch') }}</h2>
         <div class="col-md-8">
             <div class="input-group mb-4 position-relative">
-                <input type="text" class="form-control search-inp p-2 ps-5" placeholder="Search by word" aria-label="Search by word" aria-describedby="basic-addon2">
+                <input type="text" class="form-control search-inp p-2 ps-5" placeholder="{{ __('advanced.sbw') }}" aria-label="Search by word" aria-describedby="basic-addon2">
                 <i class="bi bi-search search-icon position-absolute" style="left: 15px; top: 50%; transform: translateY(-50%);"></i>
             </div>
             <div class="input-group mb-3 gap-2">
                 <select class="form-select search-category" aria-label="Default select example">
-                    <option selected>Select category</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option selected>{{ __('advanced.sc') }}</option>
+                    <option value="1">{{ __('advanced.one') }}</option>
+                    <option value="2">{{ __('advanced.two') }}</option>
+                    <option value="3">{{ __('advanced.three') }}</option>
                 </select>
-                <button class="btn btn-outline-primary" type="button" style="border-radius: 10px">Clear all</button>
+                <button class="btn btn-outline-primary" type="button" style="border-radius: 10px">{{ __('advanced.Clearall') }}</button>
             </div>
         </div>
 
         <div class="col-md-4">
             <div class="contact-form">
                 <div class="form-group">
-                    <h5 class="text-primary">Topic</h5>
+                    <h5 class="text-primary">{{ __('advanced.tpc') }}</h5>
                     <select class="form-select mb-3" aria-label="Default select example">
-                        <option selected>Select category</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option selected>{{ __('advanced.sc') }}</option>
+                        <option value="1">{{ __('advanced.one') }}</option>
+                        <option value="2">{{ __('advanced.two') }}</option>
+                        <option value="3">{{ __('advanced.three') }}</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <h5 class="text-primary">Region</h5>
+                    <h5 class="text-primary">{{ __('advanced.region') }}</h5>
                     <select class="form-select mb-3" aria-label="Default select example">
-                        <option selected>Select category</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option selected>{{ __('advanced.sc') }}</option>
+                        <option value="1">{{ __('advanced.one') }}</option>
+                        <option value="2">{{ __('advanced.two') }}</option>
+                        <option value="3">{{ __('advanced.three') }}</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <h5 class="text-primary">Archive location</h5>
+                    <h5 class="text-primary">{{ __('advanced.archl') }}</h5>
                     <select class="form-select mb-3" aria-label="Default select example">
-                        <option selected>Select category</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option selected>{{ __('advanced.sc') }}</option>
+                        <option value="1">{{ __('advanced.one') }}</option>
+                        <option value="2">{{ __('advanced.two') }}</option>
+                        <option value="3">{{ __('advanced.three') }}</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <h5 class="text-primary">Period</h5>
+                    <h5 class="text-primary">{{ __('advanced.period') }}</h5>
                     <div class="row">
                         <div class="col-6">
                             <select class="form-select mb-3" aria-label="Default select example">
-                                <option selected>Select category</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option selected>{{ __('advanced.sc') }}</option>
+                                <option value="1">{{ __('advanced.one') }}</option>
+                                <option value="2">{{ __('advanced.two') }}</option>
+                                <option value="3">{{ __('advanced.three') }}</option>
                             </select>
                         </div>
                         <div class="col-6">
                             <select class="form-select" aria-label="Default select example">
-                                <option selected>Select category</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option selected>{{ __('advanced.sc') }}</option>
+                                <option value="1">{{ __('advanced.one') }}</option>
+                                <option value="2">{{ __('advanced.two') }}</option>
+                                <option value="3">{{ __('advanced.three') }}</option>
                             </select>
                         </div>
                     </div>
@@ -176,8 +176,8 @@
 <!-- ARTICLES -->
 <div class="container mt-5 position-relative">
     <div class="d-flex justify-content-between align-items-center mb-3">
-        <h2 class="text-primary">Articles</h2>
-        <a href="{{ route('articles.index') }}" class="btn btn-primary watch-all-btn">Watch all</a>
+        <h2 class="text-primary">{{ __('advanced.artcls') }}</h2>
+        <a href="{{ route('articles.index') }}" class="btn btn-primary watch-all-btn">{{ __('advanced.wtchll') }}</a>
     </div>
     <div class="swiper-container first-swiper">
         <div class="swiper-wrapper">
@@ -201,8 +201,8 @@
 <!-- VIDEOS -->
 <div class="container mt-5 position-relative">
     <div class="d-flex justify-content-between align-items-center mb-3">
-        <h2 class="text-primary">Videos</h2>
-        <a href="{{ route('articles.videos') }}" class="btn btn-primary watch-all-btn">Watch all</a>
+        <h2 class="text-primary">{{ __('advanced.vds') }}</h2>
+        <a href="{{ route('articles.videos') }}" class="btn btn-primary watch-all-btn">{{ __('advanced.wtchll') }}</a>
     </div>
     <div class="swiper-container second-swiper">
         <div class="swiper-wrapper">
@@ -215,7 +215,7 @@
                         </a>
                     </div>
                     <p class="lead">{{ $video->title }}</p>
-                </div>  
+                </div>
             @endforeach
 
         </div>
@@ -230,8 +230,8 @@
 <!-- PHOTOSs -->
 <div class="container mt-5 position-relative">
     <div class="d-flex justify-content-between align-items-center mb-3">
-        <h2 class="text-primary">Photos</h2>
-        <a href="{{ route('articles.photos') }}" class="btn btn-primary watch-all-btn">Watch all</a>
+        <h2 class="text-primary">{{ __('advanced.phts') }}</h2>
+        <a href="{{ route('articles.photos') }}" class="btn btn-primary watch-all-btn">{{ __('advanced.wtchll') }}</a>
     </div>
     <div class="swiper-container third-swiper">
         <div class="swiper-wrapper">
@@ -253,8 +253,8 @@
 <!-- PODCASTS -->
 <div class="container mt-5 position-relative">
     <div class="d-flex justify-content-between align-items-center mb-3">
-        <h2 class="text-primary">Podcasts and interviews</h2>
-        <a href="#" class="btn btn-primary watch-all-btn">Watch all</a>
+        <h2 class="text-primary">{{ __('advanced.pdcsts') }}</h2>
+        <a href="#" class="btn btn-primary watch-all-btn">{{ __('advanced.wtchll') }}</a>
     </div>
     <div class="swiper-container third-swiper">
         <div class="swiper-wrapper">
