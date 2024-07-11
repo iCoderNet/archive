@@ -114,7 +114,7 @@
                     <option value="2">{{ __('advanced.two') }}</option>
                     <option value="3">{{ __('advanced.three') }}</option>
                 </select>
-                <button class="btn btn-outline-primary" type="button" style="border-radius: 10px">{{ __('advanced.Clearall') }}</button>
+                <button class="btn btn-outline-primary" type="button" style="border-radius: 10px">{{ __('advanced.clearall') }}</button>
             </div>
         </div>
 
