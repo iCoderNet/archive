@@ -19,13 +19,13 @@
                     <a href="mailto:de.archiv.kz2022@gmail.com" class="contact-method w-100 w-sm-100 p-4 d-flex flex-column justify-content-center" style="position: relative;">
                         <i class="bi bi-envelope-fill text-primary" style="font-size: 30px; position: absolute; top: 20%; right: 10%;"></i>
                         <span class="text-primary">{{ __('contact.writetext') }}</span>
-                        <h4>to email</h4>
+                        <h4>{{ __('contact.toemail') }}</h4>
                         <span class="text-primary">de.archiv.kz2022@gmail.com</span>
                     </a>
                     <a href="tel:77172429395" class="contact-method w-100 p-4 d-flex flex-column justify-content-center" style="position: relative;">
                         <i class="bi bi-telephone text-primary" style="font-size: 30px; position: absolute; top: 20%; right: 10%;"></i>
                         <span class="text-primary">{{ __('contact.call') }}</span>
-                        <h4>by number</h4>
+                        <h4>{{ __('contact.byphone') }}</h4>
                         <span class="text-primary">+7 7172 429395</span>
                     </a>
                 </div>
